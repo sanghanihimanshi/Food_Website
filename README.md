@@ -33,9 +33,10 @@ Foodzzy is a modern and responsive food ordering website that allows users to ex
 
 ## 🌟 How to Use
 
-1. Clone or download the repository.
-2. Open the `index.html` file in your browser.
-3. Customize or expand the website by editing the HTML and CSS code.
+1. Clone the repository.
+2. open terminal and enter command git clone https://github.com/sanghanihimanshi/Food_Website.git
+3. Open the `index.html` file in your browser.
+4. Customize or expand the website by editing the HTML and CSS code.
 
 ---
 
@@ -53,8 +54,6 @@ Foodzzy is a modern and responsive food ordering website that allows users to ex
 
 ---
 
-## 🔥 Author
-👩‍💻 **Your Name**
 - [GitHub](https://github.com/sanghanihimanshi)
 - [LinkedIn](https://www.linkedin.com/in/sanghani-himanshi-3b3832280/)
 
