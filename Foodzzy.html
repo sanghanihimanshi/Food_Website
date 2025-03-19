@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodzzy</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Food_Network_logo.svg/640px-Food_Network_logo.svg.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000fd;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 90px;
+            color: rgb(0, 0, 0);
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+        .hero .search-bar {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .hero .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+        .hero .search-bar button {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .hero .search-bar button:hover {
+            background-color: #3d3d3d;
+        }
+        .container {
+            padding: 20px;
+        }
+        .featured {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card .details {
+            padding: 10px;
+        }
+        .card .details h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        footer {
+            background-color: #d3d3d3;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .download-text {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .app-buttons img {
+            width: 150px;
+            margin: 10px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            width: 100%;
+            max-width: 1200px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .footer-links h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin: 5px 0;
+        }
+
+        .footer-links ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .footer-links ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links .icons img {
+            width: 25px;
+            margin: 5px;
+        }
+
+        select {
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body >
+
+<header>
+    <div class="logo">Foodzzy</div>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Order Food Online</h1>
+    <div class="search-bar" >
+        <input type="text" placeholder="Search for restaurants or dishes">
+        <button>Search</button>
+    </div>
+    
+</section>
+
+<section class="container">
+    <h2>Featured Restaurants</h2>
+    <div class="featured">
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/delicious-food-table_23-2150857814.jpg" alt="Chinese Restaurant">
+            <div class="details">
+                <h3>Kathiawadi Rasoi</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : Gujarati</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/160/364/990/romantic-restaurant-building-restaurant-romantic-wallpaper-preview.jpg" alt="North Indian Restaurant">
+            <div class="details">
+                <h3>Tandoori Nights</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: North Indian</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg" alt="South Indian Restaurant">
+            <div class="details">
+                <h3>Dosa Delights</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: South Indian</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://c0.wallpaperflare.com/preview/565/228/846/japanese-japan-restaurant-culture.jpg" alt="Punjabi Restaurant">
+            <div class="details">
+                <h3> Amritsari Haveli</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Punjabi</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/333/450/570/restaurant-table-interior-modern-wallpaper-preview.jpg" alt="Rajasthani Restaurant">
+            <div class="details">
+                <h3>Dal Baati Chokha</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Rajasthani </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?cs=srgb&dl=pexels-pixabay-262047.jpg&fm=jpg" alt="Bengali Restaurant">
+            <div class="details">
+                <h3>Bong Bites</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Bengali </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://w0.peakpx.com/wallpaper/821/32/HD-wallpaper-beautiful-wood-lined-restaurant-r-tables-window-restaurant-chairs-r.jpg" alt="Maharashtrian Restaurant">
+            <div class="details">
+                <h3>Misal Magic</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Maharashtrian </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?cs=srgb&dl=pexels-elevate-1267320.jpg&fm=jpg" alt="Goan Restaurant">
+            <div class="details">
+                <h3>Goan Spice Shack</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Goan </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/video/2024/02/25/201947-916877801_tiny.jpg" alt="Kerela Restaurant">
+            <div class="details">
+                <h3>Malabar Bites</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Kerala  </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/937/81/291/philadelphia-hdr-indoors-table-wallpaper-preview.jpg" alt="Hyderabadi Restaurant">
+            <div class="details">
+                <h3>Biryani Paradise</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Hyderabadi  </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2015/05/31/11/23/table-791167_640.jpg" alt="Kashmiri Restaurant">
+            <div class="details">
+                <h3>Wazwan Delight</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Kashmiri   </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/883/681/315/restaurant-beach-candles-lights-dinner-hd-wallpaper-preview.jpg" alt="Udupi Restaurant">
+            <div class="details">
+                <h3>Filter Kaapi House</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Udupi</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/460537/pexels-photo-460537.jpeg?cs=srgb&dl=pexels-pixabay-460537.jpg&fm=jpg" alt="Assamese Restaurant">
+            <div class="details">
+                <h3>Bamboo Bites</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Assamese   </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" alt="Chinese Restaurant">
+            <div class="details">
+                <h3>The Dumpling House</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : Chinese</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg" alt="Italian Restaurant">
+            <div class="details">
+                <h3> La Bella Pasta</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : Italian</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=pexels-chanwalrus-941861.jpg&fm=jpg" alt="Dessert Cult">
+            <div class="details">
+                <h3>Dessert Cult</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : Dessert</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D">            
+            <div class="details">
+                <h3>Dakshin Brahmins</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : South Indian</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/four-different-cocktail-smoothies-with-milky-cream-top_114579-1097.jpg">            
+            <div class="details">
+                <h3>O'nce Juice </h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : Juice & Shake</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D">            
+            <div class="details">
+                <h3>Punjab Grill</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : Panjabi</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" alt="Chinese Restaurant">
+            <div class="details">
+                <h3>Taco Fiesta</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : Maxican</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/386/534/411/restaurant-cafe-appliances-tables-wallpaper-preview.jpg" alt="French Restaurant">
+            <div class="details">
+                <h3>Le Petit Bistro</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine : French </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://wallpaperaccess.com/full/3014596.jpg" alt="Thai Restaurant">
+            <div class="details">
+                <h3>Siam Delights</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Thai</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://w0.peakpx.com/wallpaper/534/510/HD-wallpaper-cafe-with-a-view-cafe-cool-restaurant-interior-design.jpg" alt="American Restaurant">
+            <div class="details">
+                <h3> The Burger Joint</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: American</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71NVWgExv4L._AC_UF1000,1000_QL80_.jpg" alt="Korean Restaurant">
+            <div class="details">
+                <h3>KBBQ House,</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Korean</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/chic-modern-restaurant-interior-commercial-real-estate-4k-hd-photo_1193781-35464.jpg" alt="Mediterranean Restaurant">
+            <div class="details">
+                <h3>Greek Taverna</h3>
+                <p style="font-size: 13px ; color: rgb(107, 107, 107);">Cuisine: Mediterranean</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<footer>
+    <p style="color: #000000; font-family: Georgia, 'Times New Roman', Times, serif ;" class="download-text">For better experience, download the Foodzzy app now</p>
+    <div class="app-buttons">
+        <a href="https://play.google.com/store/games?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png" alt="Google Play"></a>
+        <a href="https://www.apple.com/in/app-store/"><img src="https://support.pivo.ai/hc/article_attachments/4406413163929/apps.png" alt="App Store"></a>
+    </div>
+    <div class="footer-content">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Food_Network_logo.svg/640px-Food_Network_logo.svg.png" alt="Foodzzy Logo">
+            <p style="color: #000000;">© 2025 Foodzzy Limited</p>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h3 style="color: #000000;">Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Foodzzy Corporate</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Foodzzy One</a></li>
+                    <li><a href="#">Foodzzy Dineout</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: #000000;">Contact us</h3>
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Ride with us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: #000000;">Available in:</h3>
+                <ul style="color: #000000;">
+                    <li ><a href="#">Surat</a></li>
+                    <li><a href="#">Bangalore</a></li>
+                    <li><a href="#">Hyderabad</a></li>
+                    <li><a href="#">Delhi</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Pune</a></li>
+                    <li><a href="#">Ahmedabad</a></li>
+                    <li><a href="#">Vadodara</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: #000000;">Legal</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: #000000;">Life at Foodzzy</h3>
+                <ul>
+                    <li><a href="#">Explore with Foodzzy</a></li>
+                    <li><a href="#">Foodzzy News</a></li>
+                    <li><a href="#">Snackables</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h3 style="color: #000000;">Social Links</h3>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/sanghani-himanshi-3b3832280/"><img src="https://img.freepik.com/premium-vector/linkedin-logo_578229-227.jpg" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/himanc_._/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+                    <a href="https://github.com/sanghanihimanshi"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+</footer>
+<p style="color: white; background-color: black; text-align: center; font-size: 12px; padding: 10px;">sanghanihimanshi160@gmail.com</p>
+
+</body>
+</html>
