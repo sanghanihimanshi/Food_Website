@@ -53,7 +53,7 @@ Foodzzy is a modern and responsive food ordering website that allows users to ex
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/06395254-635f-49c6-9d42-2241f4602436" />
 
 ---
-
+## 📫 Let's Connect! 
 - [GitHub](https://github.com/sanghanihimanshi)
 - [LinkedIn](https://www.linkedin.com/in/sanghani-himanshi-3b3832280/)
 
